@@ -4,3 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
+
+.profile-picture {
+  width: 150px; /* Ajusta este valor según el tamaño deseado */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 50%; /* Si quieres que la imagen sea circular */
+}
