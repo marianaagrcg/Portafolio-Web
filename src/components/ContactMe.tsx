@@ -7,6 +7,10 @@ interface Props{};
 const ContactMe = (_props: Props) => {
     return (
         <>
+            <section id="contactMe">
+
+            </section>
+
             <div className="footer has-background-primary-25 is-flex is-flex-direction-row">
 
                 <div className="content has-text-centered is-flex-grow-1 mt-5">

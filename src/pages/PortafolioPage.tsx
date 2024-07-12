@@ -16,6 +16,7 @@ const PortafolioPage = (_props: Props) => {
         <>
         
             <div className="Main">
+                
                 <div>
                     <Welcome />
                 </div>

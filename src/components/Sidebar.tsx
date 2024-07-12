@@ -26,7 +26,7 @@ const Navbar = () => {
 
             <div id="navbarBasicExample" className="navbar-menu">
                 <div className="navbar-start">
-                    <a className="navbar-item" href="#about-me">
+                    <a className="navbar-item" href="#aboutMe">
                         <FontAwesomeIcon icon={faUser} className="mr-2" />
                         About Me!
                     </a>
@@ -38,7 +38,7 @@ const Navbar = () => {
                         <FontAwesomeIcon icon={faProjectDiagram} className="mr-2" />
                         Projects
                     </a>
-                    <a className="navbar-item" href="#contact">
+                    <a className="navbar-item" href="#contactMe">
                         <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                         Contact
                     </a>
