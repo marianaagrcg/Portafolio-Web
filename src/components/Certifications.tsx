@@ -3,17 +3,38 @@ interface Props{};
 const Certifications = (_props: Props) => {
     return (
         <>
-            <div className="Certifications">
-                    <section className="hero has-background-primary-35">
-                        <div className="hero-body">
-                            <div className="container">
-                                <h1 className="title is-1">Certifications</h1>
-                                <h2 className="subtitle is-4">Check out my certifications!</h2>
+           <section id="certifications" className="hero bg-gradient-to-r from-purple-800 via-fuchsia-600 to-violet-500">
+                <div className="hero-body">
+                    <div className="columns is-justify-content-space-between">
+                        <div className="column is-12">
+                            <h1 className="title is-1 has-text-black">Certificates and Recognitions</h1>
+
+                            <div className="columns mt-4">
+
+                                <div className="column is-4">
+                                    <figure>
+                                        <img src="src\assets\images\NASA.jpeg" alt="C#Certifi" />
+                                    </figure>
+                                </div>
+
+                                <div className="column is-4">
+                                    <figure>
+                                        <img src="src\assets\images\C.jpg" alt="C#Certifi" />
+                                    </figure>
+                                </div>
+
+                                <div className="column is-4">
+                                    <figure>
+                                        <img src="src\assets\images\IoT.jpeg" alt="C#Certifi" />
+                                    </figure>
+                                </div>
 
                             </div>
+
                         </div>
-                    </section>
+                    </div>
                 </div>
+           </section>
         </>
     );
 }

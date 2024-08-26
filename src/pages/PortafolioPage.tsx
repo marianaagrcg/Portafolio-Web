@@ -1,8 +1,8 @@
-import React from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import ContactMe from "../components/ContactMe";
+// import React from 'react';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
+// import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+// import ContactMe from "../components/ContactMe";
 import Welcome from "../components/Welcome";
 import AboutMe from "../components/AboutMe";
 import Certifications from "../components/Certifications";

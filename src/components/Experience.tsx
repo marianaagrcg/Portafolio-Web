@@ -3,16 +3,16 @@ interface Props {}
 const Experience = (_props: Props) => {
   return (
     <>
-      <section id="experience" className="hero has-background-primary-20">
+      <section id="experience" className="hero bg-gradient-to-r from-fuchsia-600 via-purple-500 to-fuchsia-900">
         <div className="hero-body">
           <div className="columns is-justify-content-space-between">
-            <div className="column is-5">
-              <h1 className="title is-1">Experience</h1>
+            <div className="column is-6">
+              <h1 className="title is-1 has-text-black">Experience</h1>
 
-              <div className="box has-background-primary-10 has-rounded-border mb-5">
-                <h1 className="title is-3 mb-4">Encora Inc</h1>
-                <h1 className="title is-5 mb-4">Software Development Feb 2024 –  May 2024</h1>
-                <p className="title is-5 has-text-justified  has-text-primary-light p-1">
+              <div className="bg-gray-600 bg-opacity-55 rounded-lg mb-5">
+                <h1 className="text-gray-800 text-3xl uppercase font-black is-3 mb-4 pt-5 pl-5">Encora Inc</h1>
+                <h1 className="text-current font-extrabold text-2xl italic mb-4 pl-5">Software Development Feb 2024 –  May 2024</h1>
+                <p className="text-white font-bold has-text-justified text-2xl pl-5 pr-5 pb-5">
                    <li className="mb-2">Developed a digital platform using Node.js, React, and PostgreSQL to improve the assignment and management of clients, projects, vacancies, and employees, enhancing overall efficiency.</li>
                    <li className="mb-2">Created and integrated a PostgreSQL database to store and utilize company data, facilitating streamlined operations.</li>
                    <li className="mb-2">Solved the issue of outdated technological infrastructure for registering employees and managing resources.</li>
@@ -20,10 +20,10 @@ const Experience = (_props: Props) => {
                 </p>
               </div>
 
-              <div className="box has-background-primary-10 has-rounded-border mb-5">
-                <h1 className="title is-3 mb-4">NASA </h1>
-                <h1 className="title is-5 mb-4">NASA Space App Challenge 2023 Hackathon Finalist Oct 2023 – Jan 2024</h1>
-                <p className="title is-5 has-text-justified  has-text-primary-light p-1">
+              <div className="bg-gray-600 bg-opacity-55 rounded-lg mb-5">
+                <h1 className="text-gray-800 text-3xl uppercase font-black is-3 mb-4 pt-5 pl-5">NASA </h1>
+                <h1 className="text-current font-extrabold text-2xl italic mb-4 pl-5">NASA Space App Challenge 2023 Hackathon Finalist Oct 2023 – Jan 2024</h1>
+                <p className="text-white font-bold has-text-justified text-2xl pl-5 pr-5 pb-5">
                     <li className="mb-2">Nominated as one of the 40 finalist projects worldwide in the NASA Space App Challenge 2023.</li>
                     <li className="mb-2">Developed Phoenix Eye: Rising Above Wildfire Through Prediction, a machine learning system aimed at predicting forest fires in the regions of Sonora, Mexico.</li>
                     <li className="mb-2">Designed a prediction model using CNN and LSTM in Python, displayed on an interactive 3D map utilizing TypeScript, JavaScript, and CSS.</li>
@@ -31,10 +31,10 @@ const Experience = (_props: Props) => {
                 </p>
               </div>
 
-              <div className="box has-background-primary-10 has-rounded-border mb-5">
-                <h1 className="title is-3 mb-4">Borrebots</h1>
-                <h1 className="title is-5 mb-4">Member and Active Participant of Borrebots Sep 2021 - May 2022</h1>
-                <p className="title is-5 has-text-justified  has-text-primary-light p-1">
+              <div className="bg-gray-600 bg-opacity-55 rounded-lg mb-5">
+                <h1 className="text-gray-800 text-3xl uppercase font-black is-3 mb-4 pt-5 pl-5">Borrebots</h1>
+                <h1 className="text-current font-extrabold text-2xl italic mb-4 pl-5">Member and Active Participant of Borrebots Sep 2021 - May 2022</h1>
+                <p className="text-white font-bold has-text-justified text-2xl pl-5 pr-5 pb-5">
                     <li>Member of the innovation team of the robotics group.</li>
                     <li>Contributed to the design and development of competition robots, focusing on innovative solutions and strategies.</li>
                     <li>Part of the mechanical area in the FRC competition, achieving semifinals in the FRC 2022.</li>
@@ -42,8 +42,8 @@ const Experience = (_props: Props) => {
               </div>
             </div>
 
-            <div className="column is-6 ">
-                <h1 className="title is-2">Skills</h1>
+            <div className="column is-5">
+                <h1 className="title is-2 has-text-black">Skills</h1>
                 
                 <div className="columns is-multiline">
                 <div className="column is-3">
