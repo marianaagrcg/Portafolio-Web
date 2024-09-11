@@ -10,7 +10,7 @@ const Welcome = (_props: Props) => {
         <>
             <section id="Welcome" className="hero is-fullheight-with-navbar bg-fixed" 
             style={{ 
-                backgroundImage: BackgroundImage, 
+                backgroundImage: `url(${BackgroundImage})`, 
                 backgroundSize: 'cover', 
                 backgroundPosition: 'center' ,
                 opacity: '0.7'
