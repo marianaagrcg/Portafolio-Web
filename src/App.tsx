@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar'
 //import { Outlet } from "react-router-dom"
 import PortafolioPage from './pages/PortafolioPage'
 import ContactMe from './components/ContactMe';
+import './App.css'
 
 function App() {
   return (

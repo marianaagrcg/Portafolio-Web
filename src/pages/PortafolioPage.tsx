@@ -8,6 +8,7 @@ import AboutMe from "../components/AboutMe";
 import Certifications from "../components/Certifications";
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
+import Skills from "../components/Skills";
 
 interface Props {};
 
@@ -28,6 +29,7 @@ const PortafolioPage = (_props: Props) => {
 
                 <div>
                     <Experience />
+                    <Skills />
                 </div>
 
                 <div>

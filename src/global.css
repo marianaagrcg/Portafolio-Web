@@ -4,3 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* global.css */
+html {
+    scroll-behavior: smooth;
+  }
+  

@@ -3,7 +3,7 @@ interface Props{};
 const Certifications = (_props: Props) => {
     return (
         <>
-           <section id="certifications" className="hero bg-gradient-to-r from-purple-800 via-fuchsia-600 to-violet-500">
+           <section id="certifications" className="hero bg-gradient-to-b from-blue-900 via-cyan-600 to-blue-900">
                 <div className="hero-body">
                     <div className="columns is-justify-content-space-between">
                         <div className="column is-12">

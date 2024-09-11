@@ -1,28 +1,66 @@
+import { useEffect } from "react";
+
 interface Props {}
 
 const Welcome = (_props: Props) => {
     return (
         <>
-            <section id="Welcome" className="hero bg-gradient-to-r from-violet-500 via-fuchsia-600 to-purple-800">
+            <section id="Welcome" className="hero is-fullheight-with-navbar bg-fixed" 
+            style={{ 
+                backgroundImage: `url('src/assets/images/background2.jpeg')`, 
+                backgroundSize: 'cover', 
+                backgroundPosition: 'center' ,
+                opacity: '0.7'
+                }}>
+
                 <div className="hero-body">
-                    <div className="columns is-align-items-center is-justify-content-space-between">
+                    <div className="columns is-align-items-center is-justify-content-center">
                         <div className="column is-9">
-                            <div className="welcome pl-5 pr-5">
-                                <h1 className="title is-1 has-text-black">Welcome to my Portfolio!</h1>
-                                <h2 className="title is-2 has-text-link-light">I'm Mariana García!</h2>
-                                <h2 className="title is-3 has-text-primary-light p-1">I am a dedicated Computer Engineering student from Tecnologico de Monterrey committed to learning and sharing my knowledge with people interested in engineering and computing.</h2>
-                                <div className="is-flex is-justify-content-center">
-                                    <a href="#contactMe" className="button is-large mt-5">Let's Connect!</a>
+                            <div className="welcome pl-5 pr-5" 
+                                style={{ 
+                                    maxWidth: '80%', 
+                                    textAlign: 'center' 
+                                }}>
+                                <h1 className="title is-1" 
+                                    style={{ 
+                                        fontFamily: 'Bebas Neue', 
+                                        fontSize: '95px', 
+                                        lineHeight: '1.3',
+                                        color: '#2b50e3'
+                                        }}
+                                        >I'm Mariana García!
+                                </h1>
+                                <h2 className="title is-3 has-text-white" 
+                                    style={{ 
+                                        fontFamily: 'Oswald', 
+                                        fontSize: '35px' 
+                                        }}
+                                        >Computer Engineering Student
+                                </h2>
+                                <p className="has-text-white mt-4" 
+                                    style={{ 
+                                        fontFamily: 'Oswald',
+                                        fontSize: '20px', 
+                                        maxWidth: '500px', 
+                                        lineHeight: '1.5' 
+                                    }}
+                                    >Let's get to know each other.
+                                </p>
+                                <div className="is-flex is-justify-content-center mt-5">
+                                    <a href="#contactMe" className="button is-large is-info" 
+                                        style={{ 
+                                            borderRadius: '28px', 
+                                            backgroundColor: '#2b02f5',
+                                            color: '#fff',
+                                            }}
+                                        >Let's Connect!
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div className="column is-3">
-                            <figure className="image is-1by1">
-                                <img className="is-rounded" src="src/assets/images/MarianaPic.jpeg" alt="Profile1" />
-                            </figure>
-                        </div>
                     </div>
                 </div>
+
             </section>
         </>
     );
