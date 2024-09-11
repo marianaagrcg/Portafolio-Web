@@ -1,5 +1,8 @@
 // import React from 'react';
 import '../App.css'; // Asegúrate de importar el archivo CSS si lo usas
+import sipo from '../assets/images/LOGOSIPOWHITE.png'
+import phoenix from '../assets/images/PhoenixEye.png'
+import borrebots from '../assets/images/FRC.png'
 
 interface Props {}
 
@@ -37,7 +40,7 @@ const Experience = (_props: Props) => {
 
                 {/* Imagen */}
                 <figure className="image is-256x256">
-                  <img className="is-rounded" src="../assets/images/LOGOSIPOWHITE.png" alt="Encora" />
+                  <img className="is-rounded" src={sipo} alt="Encora" />
                 </figure>
 
                 <p className="text-white text-2xl has-text-centered pl-5 pr-5 pb-5"
@@ -70,7 +73,7 @@ const Experience = (_props: Props) => {
 
                 {/* Imagen */}
                 <figure className="image is-256x256">
-                  <img className="is-rounded mb-5 mt-5" src="../assets/images/PhoenixEye.png" alt="NASA" />
+                  <img className="is-rounded mb-5 mt-5" src={phoenix} alt="NASA" />
                 </figure>
 
                 <p className="text-white text-2xl has-text-centered pl-5 pr-5 pb-5"
@@ -104,7 +107,7 @@ const Experience = (_props: Props) => {
 
                   {/* Imagen */}
                 <figure className="image is-128X128">
-                  <img className="is-rounded mb-5 mt-5" src="../assets/images/FRC.png" alt="Borrebots" />
+                  <img className="is-rounded mb-5 mt-5" src={borrebots} alt="Borrebots" />
                 </figure>
 
                 <p className="text-white text-2xl has-text-centered pl-5 pr-5 pb-5"

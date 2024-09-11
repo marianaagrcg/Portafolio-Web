@@ -1,4 +1,7 @@
 interface Props{};
+import nasa from '../assets/images/NASA.jpeg'
+import iot from '../assets/images/IoT.jpeg'
+import c from '../assets/images/C.jpg'
 
 const Certifications = (_props: Props) => {
     return (
@@ -13,19 +16,19 @@ const Certifications = (_props: Props) => {
 
                                 <div className="column is-4">
                                     <figure>
-                                        <img src="../assets/images/NASA.jpeg" alt="C#Certifi" />
+                                        <img src={nasa} alt="C#Certifi" />
                                     </figure>
                                 </div>
 
                                 <div className="column is-4">
                                     <figure>
-                                        <img src="../assets/images/C.jpg" alt="C#Certifi" />
+                                        <img src={c} alt="C#Certifi" />
                                     </figure>
                                 </div>
 
                                 <div className="column is-4">
                                     <figure>
-                                        <img src="../assets/images/IoT.jpeg" alt="C#Certifi" />
+                                        <img src={iot} alt="C#Certifi" />
                                     </figure>
                                 </div>
 

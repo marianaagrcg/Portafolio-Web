@@ -1,4 +1,8 @@
 // import { useEffect } from "react";
+import profileMariana from '../assets/images/profileMariana.jpeg'
+import programming from '../assets/images/programming.jpg'
+import robotics from '../assets/images/robotics.jpg'
+import logoTec from '../assets/images/logoTec.png'
 
 interface Props {};
 
@@ -11,7 +15,7 @@ const AboutMe = (_props: Props) => {
                         
                         <div className="column is-3 mr-5">
                             <figure className="image is-256x256">
-                                <img className="is-rounded" src="./assets/images/profileMariana.jpeg" alt="Profile" />
+                                <img className="is-rounded" src= {profileMariana} alt="Profile" />
                             </figure>
                         </div>
 
@@ -47,13 +51,13 @@ I am currently in the process of learning, but I already have a wide variety of 
                         <div className="column is-2">
                             <div className="is-flex is-flex-direction-column is-align-items-center">
                                 <figure className="image is-128x128 mb-5">
-                                    <img className="is-rounded" src="../assets/images/programming.jpg" alt="Programming" />
+                                    <img className="is-rounded" src= {programming} alt="Programming" />
                                 </figure>
                                 <figure className="image is-128x128 mb-5">
-                                    <img className="is-rounded" src="../assets/images/robotics.jpg" alt="Robotics" />
+                                    <img className="is-rounded" src= {robotics} alt="Robotics" />
                                 </figure>
                                 <figure className="image is-128x128">
-                                    <img className="is-rounded" src="../assets/images/logoTec.png" alt="logoTec" />
+                                    <img className="is-rounded" src={logoTec} alt="logoTec" />
                                 </figure>
                             </div>
                         </div>
