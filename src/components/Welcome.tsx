@@ -1,5 +1,8 @@
 // import { useEffect } from "react";
 
+// import { assertAccessor } from "@babel/types";
+import BackgroundImage from "../assets/images/background2.jpeg"
+
 interface Props {}
 
 const Welcome = (_props: Props) => {
@@ -7,7 +10,7 @@ const Welcome = (_props: Props) => {
         <>
             <section id="Welcome" className="hero is-fullheight-with-navbar bg-fixed" 
             style={{ 
-                backgroundImage: `url('src/assets/images/background2.jpeg')`, 
+                backgroundImage: BackgroundImage, 
                 backgroundSize: 'cover', 
                 backgroundPosition: 'center' ,
                 opacity: '0.7'

@@ -13,19 +13,19 @@ const Certifications = (_props: Props) => {
 
                                 <div className="column is-4">
                                     <figure>
-                                        <img src="src\assets\images\NASA.jpeg" alt="C#Certifi" />
+                                        <img src="../assets/images/NASA.jpeg" alt="C#Certifi" />
                                     </figure>
                                 </div>
 
                                 <div className="column is-4">
                                     <figure>
-                                        <img src="src\assets\images\C.jpg" alt="C#Certifi" />
+                                        <img src="../assets/images/C.jpg" alt="C#Certifi" />
                                     </figure>
                                 </div>
 
                                 <div className="column is-4">
                                     <figure>
-                                        <img src="src\assets\images\IoT.jpeg" alt="C#Certifi" />
+                                        <img src="../assets/images/IoT.jpeg" alt="C#Certifi" />
                                     </figure>
                                 </div>
 

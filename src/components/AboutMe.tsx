@@ -11,7 +11,7 @@ const AboutMe = (_props: Props) => {
                         
                         <div className="column is-3 mr-5">
                             <figure className="image is-256x256">
-                                <img className="is-rounded" src="src/assets/images/profileMariana.jpeg" alt="Profile" />
+                                <img className="is-rounded" src="./assets/images/profileMariana.jpeg" alt="Profile" />
                             </figure>
                         </div>
 
@@ -47,13 +47,13 @@ I am currently in the process of learning, but I already have a wide variety of 
                         <div className="column is-2">
                             <div className="is-flex is-flex-direction-column is-align-items-center">
                                 <figure className="image is-128x128 mb-5">
-                                    <img className="is-rounded" src="src/assets/images/programming.jpg" alt="Programming" />
+                                    <img className="is-rounded" src="../assets/images/programming.jpg" alt="Programming" />
                                 </figure>
                                 <figure className="image is-128x128 mb-5">
-                                    <img className="is-rounded" src="src/assets/images/robotics.jpg" alt="Robotics" />
+                                    <img className="is-rounded" src="../assets/images/robotics.jpg" alt="Robotics" />
                                 </figure>
                                 <figure className="image is-128x128">
-                                    <img className="is-rounded" src="src/assets/images/logoTec.png" alt="logoTec" />
+                                    <img className="is-rounded" src="../assets/images/logoTec.png" alt="logoTec" />
                                 </figure>
                             </div>
                         </div>

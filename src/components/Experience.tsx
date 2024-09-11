@@ -37,7 +37,7 @@ const Experience = (_props: Props) => {
 
                 {/* Imagen */}
                 <figure className="image is-256x256">
-                  <img className="is-rounded" src="src/assets/images/LOGOSIPOWHITE.png" alt="Encora" />
+                  <img className="is-rounded" src="../assets/images/LOGOSIPOWHITE.png" alt="Encora" />
                 </figure>
 
                 <p className="text-white text-2xl has-text-centered pl-5 pr-5 pb-5"
@@ -70,7 +70,7 @@ const Experience = (_props: Props) => {
 
                 {/* Imagen */}
                 <figure className="image is-256x256">
-                  <img className="is-rounded mb-5 mt-5" src="src/assets/images/PhoenixEye.png" alt="NASA" />
+                  <img className="is-rounded mb-5 mt-5" src="../assets/images/PhoenixEye.png" alt="NASA" />
                 </figure>
 
                 <p className="text-white text-2xl has-text-centered pl-5 pr-5 pb-5"
@@ -104,7 +104,7 @@ const Experience = (_props: Props) => {
 
                   {/* Imagen */}
                 <figure className="image is-128X128">
-                  <img className="is-rounded mb-5 mt-5" src="src/assets/images/FRC.png" alt="Borrebots" />
+                  <img className="is-rounded mb-5 mt-5" src="../assets/images/FRC.png" alt="Borrebots" />
                 </figure>
 
                 <p className="text-white text-2xl has-text-centered pl-5 pr-5 pb-5"
