@@ -4,8 +4,7 @@ import {
     faUser,
     faBriefcase,
     faProjectDiagram,
-    faEnvelope,
-    faCode,
+    faEnvelope
 } from "@fortawesome/free-solid-svg-icons";
 import "bulma/css/bulma.min.css";
 import '../App.css'

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import '../App.css'; // Asegúrate de importar el archivo CSS si lo usas
 
 interface Props {}
