@@ -5,11 +5,11 @@ interface Props {}
 const Skills = (_props: Props) => {
   return (
     <>
-      <section id="skills" className="hero bg-gradient-to-b from-blue-900 via-cyan-600 to-blue-900">
+      <section id="skills" className="hero bg-black">
         <div className="hero-body">
-          <div className="columns is-justify-content-center">
-            <div className="column is-10">
-              <h1 className="title is-2 has-text-black"
+          <div className="columns is-centered">
+            <div className="column is-12">
+              <h1 className="title is-2 has-text-warning-light has-text-centered"
                 style={{
                   fontFamily: 'Bebas Neue',
                   fontSize: '70px',
@@ -19,37 +19,19 @@ const Skills = (_props: Props) => {
                 >Skills
               </h1>
 
-              <div className="columns is-multiline">
+              {/* Columna 1 */}
+              <div className="columns is-12">
                 {/* Aquí empieza la modificación para agregar los círculos */}
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://www.arduino.cc/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="skill-item"
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      backgroundColor: 'rgba(128, 128, 128, 0.5)', // Fondo gris opaco
-                      borderRadius: '50%', // Hacer que sea circular
-                      width: '150px', // Tamaño del círculo
-                      height: '150px'
-                    }}
-                  >
-                    <img
-                      src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg"
-                      alt="arduino"
-                      width="100"
-                      height="100"
-                    />
-                  </a>
-                </div>
-
-                {/* Repetir el mismo estilo para cada skill */}
-                <div className="column is-2">
-                  <a
-                    href="https://www.gnu.org/software/bash/"
                     target="_blank"
                     rel="noreferrer"
                     className="skill-item"
@@ -64,15 +46,25 @@ const Skills = (_props: Props) => {
                     }}
                   >
                     <img
-                      src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg"
-                      alt="bash"
+                      src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg"
+                      alt="arduino"
                       width="100"
-                      height="100"
+                      height="100%"
+                      style={{ objectFit: 'contain' }} // Asegurarse de que la imagen se ajuste bien
                     />
                   </a>
                 </div>
 
-                <div className="column is-2">
+                {/* Repetir el mismo estilo para cada skill */}
+
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://bulma.io/"
                     target="_blank"
@@ -97,7 +89,14 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://www.cprogramming.com/"
                     target="_blank"
@@ -122,7 +121,14 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://www.w3schools.com/cpp/"
                     target="_blank"
@@ -146,8 +152,18 @@ const Skills = (_props: Props) => {
                     />
                   </a>
                 </div>
+              </div>
 
-                <div className="column is-2">
+              {/* Columna 2 */}
+              <div className="columns is-12">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://www.w3schools.com/cs/"
                     target="_blank"
@@ -172,7 +188,14 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://www.w3schools.com/css/"
                     target="_blank"
@@ -197,7 +220,14 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://expressjs.com"
                     target="_blank"
@@ -222,7 +252,14 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                  >
                   <a
                     href="https://www.figma.com/"
                     target="_blank"
@@ -247,7 +284,18 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
+              </div>
+
+              {/* Columna 3 */}
+              <div className="columns is-12">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://git-scm.com/"
                     target="_blank"
@@ -272,7 +320,14 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://www.w3.org/html/"
                     target="_blank"
@@ -297,32 +352,14 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
-                  <a
-                    href="https://www.adobe.com/in/products/illustrator.html"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="skill-item"
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        backgroundColor: 'rgba(128, 128, 128, 0.5)',
-                        borderRadius: '50%',
-                        width: '150px',
-                        height: '150px'
-                    }}
-                  >
-                    <img
-                      src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg"
-                      alt="illustrator"
-                      width="100"
-                      height="100"
-                    />
-                  </a>
-                </div>
-
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                     target="_blank"
@@ -347,7 +384,49 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                  >
+                  <a
+                    href="https://www.typescriptlang.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="skill-item"
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        backgroundColor: 'rgba(128, 128, 128, 0.5)',
+                        borderRadius: '50%',
+                        width: '150px',
+                        height: '150px'
+                    }}
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                      alt="typescript"
+                      width="100"
+                      height="100"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              {/* Columna 4 */}
+              <div className="columns is-12">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://www.mathworks.com/"
                     target="_blank"
@@ -372,7 +451,14 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://www.mysql.com/"
                     target="_blank"
@@ -397,7 +483,46 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                  >
+                  <a
+                  href="https://www.postgresql.org"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="skill-item"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    backgroundColor: 'rgba(128, 128, 128, 0.5)',
+                    borderRadius: '50%',
+                    width: '150px',
+                    height: '150px'
+                    }}
+                    >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+                      alt="postgresql"
+                      width="100"
+                      height="100"
+                    />
+                  </a>
+                </div>
+
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://nextjs.org/"
                     target="_blank"
@@ -421,58 +546,18 @@ const Skills = (_props: Props) => {
                     />
                   </a>
                 </div>
+              </div>
 
-                <div className="column is-2">
-                  <a
-                    href="https://www.photoshop.com/en"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="skill-item"
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        backgroundColor: 'rgba(128, 128, 128, 0.5)',
-                        borderRadius: '50%',
-                        width: '150px',
-                        height: '150px'
-                    }}
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
-                      alt="photoshop"
-                      width="100"
-                      height="100"
-                    />
-                  </a>
-                </div>
-
-                <div className="column is-2">
-                  <a
-                    href="https://www.postgresql.org"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="skill-item"
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        backgroundColor: 'rgba(128, 128, 128, 0.5)',
-                        borderRadius: '50%',
-                        width: '150px',
-                        height: '150px'
-                    }}
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
-                      alt="postgresql"
-                      width="100"
-                      height="100"
-                    />
-                  </a>
-                </div>
-
-                <div className="column is-2">
+              {/* Columna 5 */}
+              <div className="columns is-12">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://postman.com"
                     target="_blank"
@@ -497,7 +582,14 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://www.python.org"
                     target="_blank"
@@ -522,7 +614,14 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://reactjs.org/"
                     target="_blank"
@@ -547,32 +646,14 @@ const Skills = (_props: Props) => {
                   </a>
                 </div>
 
-                <div className="column is-2">
-                  <a
-                    href="https://reactnative.dev/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="skill-item"
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        backgroundColor: 'rgba(128, 128, 128, 0.5)',
-                        borderRadius: '50%',
-                        width: '150px',
-                        height: '150px'
-                    }}
-                  >
-                    <img
-                      src="https://reactnative.dev/img/header_logo.svg"
-                      alt="reactnative"
-                      width="100"
-                      height="100"
-                    />
-                  </a>
-                </div>
-
-                <div className="column is-2">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://tailwindcss.com/"
                     target="_blank"
@@ -596,33 +677,18 @@ const Skills = (_props: Props) => {
                     />
                   </a>
                 </div>
-
-                <div className="column is-2">
-                  <a
-                    href="https://www.typescriptlang.org/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="skill-item"
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        backgroundColor: 'rgba(128, 128, 128, 0.5)',
-                        borderRadius: '50%',
-                        width: '150px',
-                        height: '150px'
-                    }}
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-                      alt="typescript"
-                      width="100"
-                      height="100"
-                    />
-                  </a>
-                </div>
-
-                <div className="column is-2">
+              </div>
+                    
+              {/* Columna 6 */}
+              <div className="columns is-12">
+                <div className="column is-3"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100%'
+                  }}
+                >
                   <a
                     href="https://unrealengine.com/"
                     target="_blank"
@@ -646,32 +712,8 @@ const Skills = (_props: Props) => {
                     />
                   </a>
                 </div>
-
-                <div className="column is-2">
-                  <a
-                    href="https://vuejs.org/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="skill-item"
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        backgroundColor: 'rgba(128, 128, 128, 0.5)',
-                        borderRadius: '50%',
-                        width: '150px',
-                        height: '150px'
-                    }}
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
-                      alt="vuejs"
-                      width="100"
-                      height="100"
-                    />
-                  </a>
-                </div>
               </div>
+
             </div>
           </div>
         </div>

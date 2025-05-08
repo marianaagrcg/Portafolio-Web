@@ -9,11 +9,11 @@ const ContactMe = (_props: Props) => {
     <>
       <section id="contactMe"></section>
 
-      <div className="footer has-background-black p-5">
+      <div className="footer has-background-white p-5">
         <div className="columns is-12 ml-6 is-centered mt-5 mb-5">
           <div className="column is-3 has-text-centered">
-            <h1 className="title is-1 has-text-white">Contact Me!</h1>
-            <h2 className="subtitle is-4 has-text-white">
+            <h1 className="title is-1 has-text-black">Contact Me!</h1>
+            <h2 className="subtitle is-4 has-text-black">
               Feel free to reach out!
             </h2>
           </div>
@@ -22,7 +22,7 @@ const ContactMe = (_props: Props) => {
             <div className="email mb-2">
               <a
                 href="mailto:marianagarciagomez2@gmail.com"
-                className="subtitle is-4 has-text-white"
+                className="subtitle is-4 has-text-black"
               >
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                 marianagarciagomez2@gmail.com
@@ -34,7 +34,7 @@ const ContactMe = (_props: Props) => {
             <div className="linkedin mb-2">
               <a
                 href="https://www.linkedin.com/in/mariana-alejandra-garcía-gómez-b0547624a/"
-                className="subtitle is-4 has-text-white"
+                className="subtitle is-4 has-text-black"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -48,7 +48,7 @@ const ContactMe = (_props: Props) => {
             <div className="github mb-2">
                 <a
                     href="https://github.com/marianaagrcg"
-                    className="subtitle is-4 has-text-white"
+                    className="subtitle is-4 has-text-black"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
