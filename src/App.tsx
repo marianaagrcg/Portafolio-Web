@@ -1,3 +1,4 @@
+import backgroundImage from './assets/images/background.jpg';
 import "./global.css";
 import { useEffect } from 'react';
 import Sidebar from './components/Sidebar'
@@ -34,6 +35,10 @@ function App() {
 
   return (
     <div className="site-shell">
+      <div className="site-background" aria-hidden="true">
+        <img className="site-background__image" src={backgroundImage} alt="" />
+        <div className="site-background__overlay" />
+      </div>
       <header>
         <Sidebar />
       </header>

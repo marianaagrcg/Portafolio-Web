@@ -1,23 +1,39 @@
-import phoenixEyeImage from '../assets/images/dashboard.jpeg';
-import gemsoImage from '../assets/images/sars.jpeg';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faCodeBranch } from "@fortawesome/free-solid-svg-icons";
+import serviguiaImage from '../assets/images/Serviguia.jpg';
+import crmImage from '../assets/images/grupogranauto.jpg';
+import phoenixEyeImage from '../assets/images/phoenixeye.jpg';
+import gemsoImage from '../assets/images/gemso.png';
 
 const projects = [
+  {
+    title: 'ServiGuía',
+    label: 'Full-Stack & AI Developer',
+    description:
+      'Architected a multimodal AI diagnostic platform end-to-end with React (Vite) and Flask, integrating the OpenAI API through the MCP Protocol to connect AI agents with a PostgreSQL database on AWS RDS. Automated CI/CD pipelines with GitHub Actions to AWS S3 and Elastic Beanstalk, backed by unit and end-to-end testing with Pytest, Vitest, and Playwright.',
+    tags: ['React', 'Flask', 'Docker', 'OpenAI API', 'MCP Protocol', 'AWS', 'PostgreSQL'],
+    image: serviguiaImage,
+  },
   {
     title: 'Phoenix Eye',
     label: 'NASA Space Apps Global Finalist',
     description:
-      'Led the frontend architecture for a predictive wildfire visualization experience powered by CNN + LSTM models, presented in Dubai as a global finalist project.',
-    tags: ['Next.js', 'Data Visualization', 'AI UI', 'NASA Space Apps'],
+      'Led the frontend architecture for a predictive wildfire visualization platform powered by a CNN + LSTM model, featuring a 3D interactive map paired with LoRa technology for offline emergency alerts in low-connectivity regions. Presented in Dubai as a Top 40 global finalist.',
+    tags: ['Next.js', 'CNN + LSTM', '3D Mapping', 'LoRa', 'NASA Space Apps'],
     image: phoenixEyeImage,
+  },
+  {
+    title: 'Grupo Gran Auto CRM',
+    label: 'Software Developer Intern',
+    description:
+      'Architected and deployed a custom CRM solution with Next.js, Nest.js, and Tailwind CSS to automate sales pipelines, designing MySQL data models and scalable RESTful APIs with high-performance server-side rendering.',
+    tags: ['Next.js', 'Nest.js', 'MySQL', 'Tailwind CSS', 'CRM', 'REST API'],
+    image: crmImage,
   },
   {
     title: 'Gemso',
     label: 'Agile Front-End Lead',
     description:
-      'Led the team under SCRUM to build a production-ready application officially implemented by the partner company, with a strong focus on delivery quality and maintainability.',
-    tags: ['React', 'SCRUM', 'Product Delivery', 'Leadership'],
+      'Led the team under SCRUM, applying Object-Oriented Programming principles to architect modular web interfaces integrated into live company operations, and managed cloud deployment end-to-end with a strong focus on delivery quality.',
+    tags: ['React', 'SCRUM', 'OOP', 'Product Delivery', 'Leadership'],
     image: gemsoImage,
   },
 ];
@@ -35,17 +51,6 @@ const Projects = () => {
         <div className="projects-grid">
           {projects.map((project) => (
             <article className="project-card" key={project.title}>
-              <div className="project-media project-browser">
-                <div className="project-browser__bar" aria-hidden="true">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <div className="project-browser__frame">
-                  <img src={project.image} alt={project.title} loading="lazy" />
-                </div>
-              </div>
-
               <div className="project-content">
                 <span className="section-kicker">{project.label}</span>
                 <h3 className="project-title">{project.title}</h3>
@@ -57,7 +62,7 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="project-actions">
+                {/* <div className="project-actions">
                   <a className="project-link" href="mailto:marianagarciagomez2@gmail.com?subject=Request%20for%20project%20code">
                     <FontAwesomeIcon icon={faCodeBranch} />
                     View Code
@@ -66,8 +71,11 @@ const Projects = () => {
                     <FontAwesomeIcon icon={faArrowRight} />
                     Request Demo
                   </a>
-                </div>
+                </div> */}
               </div>
+
+              <img className="project-card__bg" src={project.image} alt="" aria-hidden="true" loading="lazy" />
+              <div className="project-card__scrim" aria-hidden="true" />
             </article>
           ))}
         </div>
