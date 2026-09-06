@@ -1,79 +1,39 @@
-// import { useEffect } from "react";
-import profileMariana from '../assets/images/profileMariana.jpeg'
-import programming from '../assets/images/programming.jpg'
-import robotics from '../assets/images/robotics.jpg'
-import logoTec from '../assets/images/logoTec.png'
+import profileMariana from '../assets/images/MarianaGBW.jpg';
 
-interface Props {};
+const AboutMe = () => {
+  return (
+    <section id="aboutMe">
+      <div className="section-shell section-card about-layout-split">
+        <div className="about-portrait-column">
+          <div className="portrait-frame-sidebar">
+            <img src={profileMariana} alt="Mariana García portrait" loading="lazy" />
+          </div>
+        </div>
 
-const AboutMe = (_props: Props) => {
-    return (
-        <>
-            <section id="aboutMe" className="hero bg-black">
-                <div className="hero-body">
-                    <div className="columns is-align-items-center is-justify-content-space-between">
-                        
-                        <div className="column is-3 mr-5">
-                            <figure className="image is-256x256">
-                                <img className="is-rounded" src= {profileMariana} alt="Profile" />
-                            </figure>
-                        </div>
+        <div className="about-content-column">
+          <span className="section-kicker">About Me</span>
+          <h2 className="section-title">Concise, product-minded engineering.</h2>
 
-                        {/* Sección de texto */}
-                        <div className="column is-7">
-                            <h1 className="title is-1 has-text-warning-light "
-                                style={{ 
-                                    fontFamily: 'Bebas Neue', 
-                                    fontSize: '70px', 
-                                    lineHeight: '1.3',
-                                    color: '#ffffff' 
-                                }}>
-                                About Me!
-                            </h1>
-                            <h2 className="title is-3 p-1"
-                                style={{
-                                    fontFamily: 'Oswald',
-                                    fontSize: '30px',  
-                                    lineHeight: '1.5',
-                                    color: '#FFFFFF'
-                                }}>
-                                    Since I was very young, I was very interested in technological and scientific topics. 
-                                    I really enjoyed learning about computing, robotics, and programming. 
-                                    In 2022, taking into account my interests, I began studying Computer Engineering at the best private university in Mexico, 
-                                    Tec de Monterrey.                            
-                            </h2>
-                            <p className="title is-3 p-1" 
-                                style={{ 
-                                    fontFamily: 'Oswald', 
-                                    fontSize: '30px', 
-                                    lineHeight: '1.5', 
-                                    color: '#FFFFFF'  // Texto blanco, similar al de Welcome
-                                }}>
-                                    I am currently in the process of learning, 
-                                    but I already have a wide variety of projects that I have developed over the years,
-                                    which demonstrate my acquired knowledge and skills.                           
-                            </p>
-                        </div>
+          <p className="section-summary about-summary-full">
+            Computer Science engineer focused on solving complex problems with clear, robust, and maintainable software. I specialize in scalable full-stack architectures, clean interfaces, and DX optimization.
+          </p>
 
-                        {/* Imágenes adicionales */}
-                        <div className="column is-2">
-                            <div className="is-flex is-flex-direction-column is-align-items-center">
-                                <figure className="image is-128x128 mb-5">
-                                    <img className="is-rounded" src= {programming} alt="Programming" />
-                                </figure>
-                                <figure className="image is-128x128 mb-5">
-                                    <img className="is-rounded" src= {robotics} alt="Robotics" />
-                                </figure>
-                                <figure className="image is-128x128">
-                                    <img className="is-rounded" src={logoTec} alt="logoTec" />
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    );
-}
+          <div className="info-stack-horizontal">
+            <div className="info-card">
+              <p>
+                Strong execution across front-end craftsmanship, backend integration, and end-to-end product delivery.
+              </p>
+            </div>
+            <div className="info-card">
+              <p>
+                Focused on building reliable systems, clean APIs, and software that scales with clear business intent.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default AboutMe;

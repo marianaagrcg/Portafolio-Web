@@ -1,56 +1,50 @@
-// import React from 'react';
 import nasa from '../assets/images/NASA.jpeg';
 import iot from '../assets/images/IoT.jpeg';
 import c from '../assets/images/C.jpg';
 
-interface Props {}
+const certifications = [
+    {
+        title: 'NASA Space Apps Challenge',
+        subtitle: 'Global finalist recognition',
+        image: nasa,
+    },
+    {
+        title: 'C Programming Certificate',
+        subtitle: 'Core programming foundation',
+        image: c,
+    },
+    {
+        title: 'IoT Certificate',
+        subtitle: 'Connected systems and hardware integration',
+        image: iot,
+    },
+];
 
-const Certifications = (_props: Props) => {
+const Certifications = () => {
     return (
-        <>
-           <section id="certifications" className="hero bg-black">
-                <div className="hero-body">
-                    <div className="columns is-justify-content-center">
-                        <div className="column is-12">
-                            <h1 className="title is-1 has-text-warning-light has-text-centered"
-                                style={{
-                                    fontFamily: 'Bebas Neue',
-                                    fontSize: '70px',
-                                    lineHeight: '1.3',
-                                    color: '#0a0a0a'
-                                }}
-                            >
-                                Certificates and Recognitions
-                            </h1>
+        <section id="certifications">
+            <div className="section-shell">
+                <span className="section-kicker">Certificates</span>
+                <h2 className="section-title">Recognitions that reinforce the technical profile behind the portfolio.</h2>
+                <p className="section-summary">
+                    A minimal gallery that keeps the focus on the credential itself while matching the dark premium visual language of the site.
+                </p>
 
-                            <div className="columns is-justify-content-center mt-6 gallery">
-                                {/* Imagen 1 */}
-                                <div className="column is-4">
-                                    <figure className="gallery-item">
-                                        <img src={nasa} alt="NASA Certificate" />
-                                    </figure>
-                                </div>
-
-                                {/* Imagen 2 */}
-                                <div className="column is-4">
-                                    <figure className="gallery-item">
-                                        <img src={c} alt="C Certificate" />
-                                    </figure>
-                                </div>
-
-                                {/* Imagen 3 */}
-                                <div className="column is-4">
-                                    <figure className="gallery-item">
-                                        <img src={iot} alt="IoT Certificate" />
-                                    </figure>
-                                </div>
+                <div className="cert-grid">
+                    {certifications.map((certificate) => (
+                        <article className="cert-card" key={certificate.title}>
+                            <div className="cert-card__frame">
+                                <img src={certificate.image} alt={certificate.title} loading="lazy" />
                             </div>
-
-                        </div>
-                    </div>
+                            <div className="cert-card__content">
+                                <h3>{certificate.title}</h3>
+                                <p>{certificate.subtitle}</p>
+                            </div>
+                        </article>
+                    ))}
                 </div>
-           </section>
-        </>
+            </div>
+        </section>
     );
 }
 

@@ -1,47 +1,22 @@
-// import React from 'react';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
-// import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-// import ContactMe from "../components/ContactMe";
 import Welcome from "../components/Welcome";
 import AboutMe from "../components/AboutMe";
-import Certifications from "../components/Certifications";
+import Education from "../components/Education";
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
 import Skills from "../components/Skills";
+import Certifications from "../components/Certifications";
 
-interface Props {};
-
-const PortafolioPage = (_props: Props) => {
+const PortafolioPage = () => {
     return (
-        <>
-        
-            <div className="Main">
-                
-                <div>
-                    <Welcome />
-                </div>
-
-
-                <div>
-                    <AboutMe/>
-                </div>
-
-                <div>
-                    <Experience />
-                    <Skills />
-                </div>
-
-                <div>
-                    <Projects />
-                </div>
-
-                <div>
-                    <Certifications />
-                </div>
-
-            </div>
-        </>
+        <div className="portfolio-page">
+            <Welcome />
+            <AboutMe />
+            <Education />
+            <Experience />
+            <Projects />
+            <Skills />
+            <Certifications />
+        </div>
     )
 };
 

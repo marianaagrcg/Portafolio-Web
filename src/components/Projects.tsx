@@ -1,113 +1,78 @@
-// import React from 'react';
-import '../App.css'; // Asegúrate de importar el archivo CSS
+import phoenixEyeImage from '../assets/images/dashboard.jpeg';
+import gemsoImage from '../assets/images/sars.jpeg';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 
-// Importa las imágenes
-import gardenImage from '../assets/images/dashboard.jpeg'; 
-import genomeImage from '../assets/images/sars.jpeg';
+const projects = [
+  {
+    title: 'Phoenix Eye',
+    label: 'NASA Space Apps Global Finalist',
+    description:
+      'Led the frontend architecture for a predictive wildfire visualization experience powered by CNN + LSTM models, presented in Dubai as a global finalist project.',
+    tags: ['Next.js', 'Data Visualization', 'AI UI', 'NASA Space Apps'],
+    image: phoenixEyeImage,
+  },
+  {
+    title: 'Gemso',
+    label: 'Agile Front-End Lead',
+    description:
+      'Led the team under SCRUM to build a production-ready application officially implemented by the partner company, with a strong focus on delivery quality and maintainability.',
+    tags: ['React', 'SCRUM', 'Product Delivery', 'Leadership'],
+    image: gemsoImage,
+  },
+];
 
-interface Props {}
-
-const Projects = (_props: Props) => {
+const Projects = () => {
   return (
-    <>
-      <section id="projects" className="hero bg-white">
-        <div className="hero-body">
-          <div className="columns is-justify-content-center is-align-items-center">
-            <div className="column is-12">
-              <h1 className="title is-1 has-text-black has-text-centered"
-                style={{
-                  fontFamily: 'Bebas Neue',
-                  fontSize: '70px',
-                  lineHeight: '1.3',
-                  color: '#0a0a0a'
-                }}
-              >
-                Projects
-              </h1>
+    <section id="projects">
+      <div className="section-shell">
+        <span className="section-kicker">Featured Projects</span>
+        <h2 className="section-title">Selected work that blends interface quality, product thinking, and engineering depth.</h2>
+        <p className="section-summary">
+          These projects highlight systems I contributed to or led, with a focus on scalable frontend execution and clear technical outcomes.
+        </p>
 
-              {/* Contenedor de las columnas de proyectos */}
-              <div className="columns is-justify-content-center">
-                {/* Primera columna de proyectos */}
-                <div className="column is-6">
-                  
-                  {/* Card 1 */}
-                  <div className="project-card bg-black rounded-lg p-5 hover-effect"
-                    style={{ position: 'relative', overflow: 'hidden', transition: 'all 0.5s ease' }} 
-                  >
-                    <h1 className="font-bold has-text-warning mt-5 has-text-centered" 
-                      style={{
-                        fontFamily: 'Bebas Neue',
-                        fontSize: '40px',
-                        lineHeight: '1.2',
-                      }}
-                    >
-                      Automated Garden
-                    </h1>
-                    <p className="text-white text-2xl pl-5 pr-5 pb-5"
-                      style={{
-                        fontFamily: 'Oswald',
-                        fontSize: '26px',
-                        lineHeight: '1.12'
-                      }}
-                    >
-                      <li className="mb-2">Developed an urban garden with three different ecosystems to monitor and manage each environment.</li>
-                      <li className="mb-2">Implemented Internet of Things (IoT) technologies to create a web platform displaying temperature, humidity, luminosity, and other factors of each ecosystem, with data stored in a custom database.</li>
-                      <li className="mb-2">Analyzed data corresponding to each ecosystem to determine optimal watering schedules based on specific needs.</li>
-                      <li className="mb-2">Demonstrated skills in IoT integration, data analysis, and web platform development using Arduino and Node-Red.</li>
-                    </p>
-
-                    {/* Imagen oculta debajo de la card que se despliega en hover */}
-                    <div className="image-container">
-                      <img 
-                        src={gardenImage} 
-                        alt="Automated Garden" 
-                        className="hover-image" 
-                      />
-                    </div>
-                  </div>
-
-                  {/* Card 2 */}
-                  <div className="project-card bg-black rounded-lg p-5 hover-effect mt-5"
-                    style={{ position: 'relative', overflow: 'hidden', transition: 'all 0.5s ease' }} 
-                  >
-                    <h1 className="font-bold has-text-warning mt-5 has-text-centered" 
-                      style={{
-                        fontFamily: 'Bebas Neue',
-                        fontSize: '40px',
-                        lineHeight: '1.2',
-                      }}
-                    >
-                      SARS-CoV-2 Genome Analysis
-                    </h1>
-                    <p className="text-white text-2xl pl-5 pr-5 pb-5"
-                      style={{
-                        fontFamily: 'Oswald',
-                        fontSize: '26px',
-                        lineHeight: '1.12'
-                      }}
-                    >
-                      <li className="mb-2">Analyzed 10 different variants of SARS-CoV-2 from various global locations using a large database.</li>
-                      <li className="mb-2">Developed a program with functions and methods to read the SARS-CoV-2 genome sequences from different countries.</li>
-                      <li className="mb-2">Compared the genetic content of the variants and created visual representations to observe and analyze their behavior.</li>
-                      <li className="mb-2">Demonstrated proficiency in data analysis, programming in R, and genomic data visualization.</li>
-                    </p>
-
-                    {/* Imagen oculta debajo de la card que se despliega en hover */}
-                    <div className="image-container">
-                      <img 
-                        src={genomeImage} 
-                        alt="SARS-CoV-2 Genome Analysis" 
-                        className="hover-image" 
-                      />
-                    </div>
-                  </div>
+        <div className="projects-grid">
+          {projects.map((project) => (
+            <article className="project-card" key={project.title}>
+              <div className="project-media project-browser">
+                <div className="project-browser__bar" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div className="project-browser__frame">
+                  <img src={project.image} alt={project.title} loading="lazy" />
                 </div>
               </div>
-            </div>
-          </div>
+
+              <div className="project-content">
+                <span className="section-kicker">{project.label}</span>
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-description">{project.description}</p>
+
+                <div className="tech-tags" aria-label={`${project.title} technologies`}>
+                  {project.tags.map((tag) => (
+                    <span key={tag} className="tech-tag">{tag}</span>
+                  ))}
+                </div>
+
+                <div className="project-actions">
+                  <a className="project-link" href="mailto:marianagarciagomez2@gmail.com?subject=Request%20for%20project%20code">
+                    <FontAwesomeIcon icon={faCodeBranch} />
+                    View Code
+                  </a>
+                  <a className="project-link" href="mailto:marianagarciagomez2@gmail.com?subject=Request%20for%20project%20demo">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                    Request Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

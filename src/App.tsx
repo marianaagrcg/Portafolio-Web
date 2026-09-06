@@ -1,26 +1,47 @@
-// import React, { useState } from 'react'
 import "./global.css";
+import { useEffect } from 'react';
 import Sidebar from './components/Sidebar'
-//import { Outlet } from "react-router-dom"
 import PortafolioPage from './pages/PortafolioPage'
 import ContactMe from './components/ContactMe';
 import './App.css'
 
 function App() {
+  useEffect(() => {
+    const targets = document.querySelectorAll(
+      '.section-shell, .timeline-card, .skill-card, .project-card, .cert-card, .hero-panel, .portrait-frame, .action-button, .social-link'
+    );
+
+    targets.forEach((target) => {
+      target.classList.add('scroll-reveal');
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.16, rootMargin: '0px 0px -8% 0px' }
+    );
+
+    targets.forEach((target) => observer.observe(target));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <>
-      <div>
-        <header>
-          <Sidebar />
-        </header>
-        <main>
-          <PortafolioPage/>
-        </main>
-        <footer>
-          <ContactMe/>
-        </footer>
-      </div>
-    </>
+    <div className="site-shell">
+      <header>
+        <Sidebar />
+      </header>
+      <main>
+        <PortafolioPage />
+      </main>
+      <ContactMe />
+    </div>
   )
 }
 
