@@ -16,7 +16,7 @@
 	--muted: #a3afc2;
 	--accent: #e0c8f0;
 	--accent-2: #b2e8f1;
-	--accent-3: #f0c1f8;
+	--accent-3: #dba3e0;
 	--shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
 	--radius-xl: 28px;
 	--radius-lg: 20px;
@@ -220,7 +220,7 @@ section {
 	height: 10px;
 	border-radius: 999px;
 	background: linear-gradient(135deg, var(--accent-2), var(--accent-3));
-	box-shadow: 0 0 18px rgba(234, 183, 241, 0.45);
+	box-shadow: 0 0 18px rgba(180, 135, 184, 0.4);
 }
 
 .nav-links {
@@ -525,7 +525,7 @@ section {
 }
 
 .section-card:hover {
-	border-color: rgba(239, 196, 247, 0.45);
+	border-color: rgba(221, 182, 224, 0.4);
 }
 
 .about-grid {
@@ -566,7 +566,7 @@ section {
 }
 
 .info-card:hover {
-	border-color: rgba(240, 171, 252, 0.45);
+	border-color: rgba(224, 182, 228, 0.4);
 }
 
 .info-card p {
@@ -592,7 +592,7 @@ section {
 }
 
 .timeline-card:hover {
-	border-color: rgba(162, 137, 167, 0.45);
+	border-color: rgba(223, 177, 228, 0.4);
 }
 
 .timeline-card::before {
@@ -690,7 +690,7 @@ section {
 .tech-token:hover,
 .tech-tag:hover {
 	color: var(--text);
-	border-color: rgba(237, 192, 245, 0.5);
+	border-color: rgba(218, 173, 223, 0.45);
 	background: rgba(196, 181, 253, 0.22);
 }
 
@@ -720,7 +720,7 @@ section {
 }
 
 .project-card:hover {
-	border-color: rgba(246, 202, 253, 0.45);
+	border-color: rgba(217, 172, 221, 0.4);
 }
 
 .project-card--featured {
@@ -878,7 +878,7 @@ section {
 
 .cert-card:hover {
 	transform: translateY(-2px);
-	border-color: rgba(246, 207, 253, 0.45);
+	border-color: rgba(219, 186, 221, 0.4);
 }
 
 .cert-card__frame {
@@ -929,7 +929,7 @@ section {
 }
 
 .skill-card:hover {
-	border-color: rgba(235, 190, 243, 0.45);
+	border-color: rgba(221, 182, 224, 0.4);
 }
 
 .skill-card h3 {
@@ -987,7 +987,7 @@ section {
 }
 
 .contact-row:hover {
-	border-color: rgba(239, 199, 247, 0.45);
+	border-color: rgba(216, 186, 219, 0.4);
 }
 
 .contact-email {
